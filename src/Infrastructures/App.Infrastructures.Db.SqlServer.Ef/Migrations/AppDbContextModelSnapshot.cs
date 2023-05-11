@@ -67,7 +67,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasIndex("StatusId");
 
-                    b.ToTable("Bids");
+                    b.ToTable("Bids", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.BidStatus", b =>
@@ -88,7 +88,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BidStatuses");
+                    b.ToTable("BidStatuses", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.City", b =>
@@ -124,7 +124,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cities");
+                    b.ToTable("Cities", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.Customer", b =>
@@ -193,7 +193,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Customers", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.CustomerAddress", b =>
@@ -248,7 +248,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("CustomerAddresses");
+                    b.ToTable("CustomerAddresses", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.Expert", b =>
@@ -328,7 +328,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasIndex("CityId");
 
-                    b.ToTable("Experts");
+                    b.ToTable("Experts", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.ExpertService", b =>
@@ -372,7 +372,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasIndex("ServiceId");
 
-                    b.ToTable("ExpertServices");
+                    b.ToTable("ExpertServices", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.Order", b =>
@@ -434,7 +434,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasIndex("StatusId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.OrderService", b =>
@@ -472,7 +472,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasIndex("ServiceId");
 
-                    b.ToTable("OrderServices");
+                    b.ToTable("OrderServices", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.OrderStatus", b =>
@@ -493,7 +493,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("OrderStatues");
+                    b.ToTable("OrderStatues", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.Service", b =>
@@ -534,7 +534,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Services");
+                    b.ToTable("Services", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.ServiceCategory", b =>
@@ -558,7 +558,7 @@ namespace App.Infrastructures.Db.SqlServer.Ef.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ServiceCategories");
+                    b.ToTable("ServiceCategories", (string)null);
                 });
 
             modelBuilder.Entity("App.Domain.Core.Entities.Bid", b =>

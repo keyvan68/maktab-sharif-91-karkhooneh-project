@@ -65,5 +65,10 @@ namespace App.Infrastructures.Data.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public int RegisterCustomerProfile(RegisterCustomerProfileInputModel model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
